@@ -1,0 +1,58 @@
+{
+  "stage1": {
+    "stage": 1,
+    "labels": [
+      "background",
+      "unknown",
+      "help"
+    ],
+    "trained_on_real_data": false,
+    "best_val_accuracy": 0.3333,
+    "c_var_name": "g_stage1_wake_model_data",
+    "header_path": "C:\\TinyML\\models\\stage1_wake_model.h",
+    "firmware_header_path": "C:\\TinyML\\firmware_esp32s3\\include\\stage1_wake_model.h",
+    "tflite_path": "C:\\TinyML\\models\\stage1_wake_int8.tflite",
+    "flash_bytes": 29264,
+    "flash_kb": 28.58,
+    "arena_kb": 22.78,
+    "input_dtype": "int8",
+    "output_dtype": "int8",
+    "input_quant": [
+      0.009403388947248459,
+      -127
+    ],
+    "output_quant": [
+      0.00390625,
+      -128
+    ],
+    "updated_at_utc": "2026-11-25T10:51:51.241754+00:00"
+  },
+  "stage2": {
+    "stage": 2,
+    "labels": [
+      "silence_unknown",
+      "confirm",
+      "cancel"
+    ],
+    "trained_on_real_data": false,
+    "best_val_accuracy": 0.4222,
+    "c_var_name": "g_stage2_verify_model_data",
+    "header_path": "C:\\TinyML\\models\\stage2_verify_model.h",
+    "firmware_header_path": "C:\\TinyML\\firmware_esp32s3\\include\\stage2_verify_model.h",
+    "tflite_path": "C:\\TinyML\\models\\stage2_verify_int8.tflite",
+    "flash_bytes": 29264,
+    "flash_kb": 28.58,
+    "arena_kb": 22.78,
+    "input_dtype": "int8",
+    "output_dtype": "int8",
+    "input_quant": [
+      0.009987982921302319,
+      -113
+    ],
+    "output_quant": [
+      0.00390625,
+      -128
+    ],
+    "updated_at_utc": "2026-11-25T10:52:33.845488+00:00"
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "stage1": {
+    "stage": 1,
+    "tflite_path": "C:\\TinyML\\models\\stage1_wake_int8.tflite",
+    "labels": [
+      "background",
+      "unknown",
+      "help"
+    ],
+    "flash_bytes": 29264,
+    "flash_kb": 28.58,
+    "estimated_sram_arena_kb": 22.78,
+    "test_samples": 45,
+    "accuracy": 0.4222,
+    "default_threshold": 0.8,
+    "far_at_default": 0.0,
+    "frr_at_default": 1.0,
+    "threshold_sweep": {
+      "0.50": {
+        "FAR": 0.0,
+        "FRR": 1.0
+      },
+      "0.65": {
+        "FAR": 0.0,
+        "FRR": 1.0
+      },
+      "0.80": {
+        "FAR": 0.0,
+        "FRR": 1.0
+      },
+      "0.85": {
+        "FAR": 0.0,
+        "FRR": 1.0
+      },
+      "0.90": {
+        "FAR": 0.0,
+        "FRR": 1.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        19,
+        0,
+        0
+      ],
+      [
+        13,
+        0,
+        0
+      ],
+      [
+        13,
+        0,
+        0
+      ]
+    ],
+    "classification_report": {
+      "background": {
+        "precision": 0.4222222222222222,
+        "recall": 1.0,
+        "f1-score": 0.59375,
+        "support": 19.0
+      },
+      "unknown": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 13.0
+      },
+      "help": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 13.0
+      },
+      "accuracy": 0.4222222222222222,
+      "macro avg": {
+        "precision": 0.14074074074074075,
+        "recall": 0.3333333333333333,
+        "f1-score": 0.19791666666666666,
+        "support": 45.0
+      },
+      "weighted avg": {
+        "precision": 0.1782716049382716,
+        "recall": 0.4222222222222222,
+        "f1-score": 0.25069444444444444,
+        "support": 45.0
+      }
+    },
+    "confusion_matrix_png": "C:\\TinyML\\models\\eval_stage1_cm.png"
+  },
+  "stage2": {
+    "stage": 2,
+    "tflite_path": "C:\\TinyML\\models\\stage2_verify_int8.tflite",
+    "labels": [
+      "silence_unknown",
+      "confirm",
+      "cancel"
+    ],
+    "flash_bytes": 29264,
+    "flash_kb": 28.58,
+    "estimated_sram_arena_kb": 22.78,
+    "test_samples": 45,
+    "accuracy": 0.4,
+    "default_threshold": 0.75,
+    "far_at_default": 0.0,
+    "frr_at_default": 1.0,
+    "threshold_sweep": {
+      "0.50": {
+        "FAR": 0.0,
+        "FRR": 1.0
+      },
+      "0.65": {
+        "FAR": 0.0,
+        "FRR": 1.0
+      },
+      "0.75": {
+        "FAR": 0.0,
+        "FRR": 1.0
+      },
+      "0.85": {
+        "FAR": 0.0,
+        "FRR": 1.0
+      },
+      "0.90": {
+        "FAR": 0.0,
+        "FRR": 1.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        0,
+        15,
+        0
+      ],
+      [
+        0,
+        18,
+        0
+      ],
+      [
+        0,
+        12,
+        0
+      ]
+    ],
+    "classification_report": {
+      "silence_unknown": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 15.0
+      },
+      "confirm": {
+        "precision": 0.4,
+        "recall": 1.0,
+        "f1-score": 0.5714285714285714,
+        "support": 18.0
+      },
+      "cancel": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 12.0
+      },
+      "accuracy": 0.4,
+      "macro avg": {
+        "precision": 0.13333333333333333,
+        "recall": 0.3333333333333333,
+        "f1-score": 0.19047619047619047,
+        "support": 45.0
+      },
+      "weighted avg": {
+        "precision": 0.16,
+        "recall": 0.4,
+        "f1-score": 0.22857142857142854,
+        "support": 45.0
+      }
+    },
+    "confusion_matrix_png": "C:\\TinyML\\models\\eval_stage2_cm.png"
+  },
+  "smoke_test": true
+}

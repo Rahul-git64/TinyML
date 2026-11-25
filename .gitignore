@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+
+# Datasets & large raw archives (keep directory structure)
+data/raw/
+data/processed/
+data/custom_recordings/*.wav
+!data/custom_recordings/.gitkeep
+
+# Build artifacts
+firmware_esp32s3/.pio/
+.pio/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
